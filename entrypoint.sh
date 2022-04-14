@@ -1,4 +1,10 @@
 #!/bin/bash
+
+# by default nginx is dormant so we need to start it on each run
 service nginx start
+
+# get into the proper directory
 cd /app
-gunicorn -k uvicorn.workers.UvicornWorker --bind unix:/app/gunicorn.sock main:app
+
+# run the app
+gunicorn --config config.py main:app

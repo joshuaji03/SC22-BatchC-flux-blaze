@@ -1,9 +1,13 @@
+# define the path to the gunicorn socket created when the app is ran
 upstream app_server {
     server unix:/app/gunicorn.sock fail_timeout=0;
 }
 
 server {
+    # port 80 is the default port for http
     listen 80;
+
+    # redirect all traffic to the gunicorn socket
     location / {
         proxy_pass http://app_server;
         proxy_redirect     off;
