@@ -7,4 +7,4 @@ service nginx start
 cd /app
 
 # run the app
-gunicorn --config config.py main:app
+gunicorn --config /app/config.py main:app
