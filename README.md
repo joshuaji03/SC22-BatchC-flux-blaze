@@ -48,6 +48,15 @@ or
 
 `docker exec -it omni /bin/bash` for an interactive bash terminal (this option only works if the container is running and not stuck in a restart loop)
 
+### Common Issues
+
+`$'\r': command not found` when attempting to start docker container
+
+this is caused by the the `entrypoint.sh` script somehow having CLRF line endings instead of LF line endings.
+
+to fix this run
+
+`sed -i 's/\r$//' entrypoint.sh`
 
 ### File Structure
 The files/directories which you will need to edit are **bolded**
@@ -55,6 +64,7 @@ The files/directories which you will need to edit are **bolded**
 **DO NOT TOUCH OTHER FILES. THIS MAY RESULT IN YOUR PROJECT BEING UNABLE TO RUN**
 
 - .gitignore
+- config.py
 - Dockerfile
 - READMD.md
 - entrypoint.sh
@@ -86,6 +96,7 @@ Contains common functions used by the flask app. Put things here that are used m
 ### templates/ ###
 Contains the HTML pages used for the webpage. Edit these to fit your project. index.html is the demo page.
 ### Files used for deployment ###
+`config.py`
 `Dockerfile`
 `entrypoint.sh`
 `nginx_host`
