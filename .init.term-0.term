@@ -94,3 +94,230 @@ Password for 'https://joshuaji03@github.com':
 Branch 'main' set up to track remote branch 'main' from 'origin'.
 Everything up-to-date
 (base) ]0;~/omni[01;34m~/omni[00m$ git add .
+(base) ]0;~/omni[01;34m~/omni[00m$ git commit -m "First commit"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"U"p"d"a"t"e"
+[main 39911e3] Update
+ 64 files changed, 16859 insertions(+), 11 deletions(-)
+ create mode 100644 .init.term-0.term
+ create mode 100644 app/.init.term-0.term
+ create mode 100644 app/.init.term-1.term
+ create mode 100644 app/.init.term-2.term
+ create mode 100644 app/best.pt
+ create mode 100644 app/init.term
+ create mode 100644 app/static/assets/favicon.ico
+ create mode 100644 app/static/assets/favicon.ico~
+ create mode 100644 app/static/assets/img/3566A9F4-B133-42ED-8709-43CD11B24D21.jpeg
+ create mode 100644 app/static/assets/img/IMG_0358.jpeg
+ create mode 100644 app/static/assets/img/JPEG_20200513_171145.jpg
+ create mode 100644 app/static/assets/img/Screen Shot 2022-08-03 at 11.52.43 AM.png
+ create mode 100644 app/static/assets/img/Screen Shot 2022-08-03 at 12.00.35 PM.png
+ create mode 100644 app/static/assets/img/Screen Shot 2022-08-04 at 10.50.16 AM.png
+ create mode 100644 app/static/assets/img/allergiescartoon.jpg
+ create mode 100644 app/static/assets/img/chopping_vegetables.jpg
+ create mode 100644 app/static/assets/img/confusion_matrix.png
+ create mode 100644 app/static/assets/img/image.png
+ create mode 100644 app/static/assets/img/img_4957-scaled.jpg
+ create mode 100644 app/static/assets/img/itsame.png
+ create mode 100644 app/static/assets/img/jj.png
+ create mode 100644 app/static/assets/img/portrait_black.png
+ create mode 100644 app/static/assets/img/portrait_black.png~
+ create mode 100644 app/static/assets/img/tnw-logo.svg
+ create mode 100644 app/static/assets/img/tnw-logo.svg~
+ create mode 100644 app/static/css/resultstyles.css
+ create mode 100644 app/static/css/styles.css
+ create mode 100644 app/static/js/scripts.js
+ create mode 100644 app/static/js/scripts.js~
+ create mode 100644 app/static/uploads/1_I_SFslP1ei2DJPFTdaugCA.jpg
+ create mode 100644 app/static/uploads/1_I_SFslP1ei2DJPFTdaugCA.png
+ create mode 100644 app/static/uploads/1_vyNg13cW0BJG_EVyVP0GLA.jpg
+ create mode 100644 app/static/uploads/1_vyNg13cW0BJG_EVyVP0GLA.png
+ create mode 100644 app/static/uploads/22101_crunchy_taco_supreme_750x660.jpg
+ create mode 100644 app/static/uploads/22172_nacho_cheese_doritos_locos_tacos_750x340.jpg
+ create mode 100644 app/static/uploads/30-minute-tofu-pad-thai-2.jpg
+ create mode 100644 app/static/uploads/3h7veg.jpg
+ create mode 100644 app/static/uploads/DALLE_2022-08-02_21.01.09_-_A_top_view_of_a_tonkotsu_ramen_next_to_a_window_on_a_rainy_day.jpg
+ create mode 100644 app/static/uploads/DALLE_2022-08-02_21.01.09_-_A_top_view_of_a_tonkotsu_ramen_next_to_a_window_on_a_rainy_day.png
+ create mode 100644 app/static/uploads/DALLE_2022-08-02_21.13.09_-_Fish_eye_photo_of_a_lion_about_to_eat_the_camera_.jpg
+ create mode 100644 app/static/uploads/DALLE_2022-08-02_21.13.09_-_Fish_eye_photo_of_a_lion_about_to_eat_the_camera_.png
+ create mode 100644 app/static/uploads/DALLE_2022-08-03_16.42.22_-_A_bowl_of_pad_thai_by_a_large_window_on_a_sunny_day.jpg
+ create mode 100644 app/static/uploads/DALLE_2022-08-03_16.42.22_-_A_bowl_of_pad_thai_by_a_large_window_on_a_sunny_day.png
+ create mode 100644 app/static/uploads/DALLE_2022-08-03_16.43.45_-_A_plate_with_lobster_tail_by_a_large_window_on_a_sunny_day.jpg
+ create mode 100644 app/static/uploads/DALLE_2022-08-03_16.43.45_-_A_plate_with_lobster_tail_by_a_large_window_on_a_sunny_day.png
+ create mode 100644 app/static/uploads/Golden_peanut_brittle_cracked_on_a_serving_dish.jpg
+ create mode 100644 app/static/uploads/boy_sad.jpeg
+ create mode 100644 app/static/uploads/boy_sad.jpg
+ create mode 100644 app/static/uploads/chopping_vegetables.jpg
+ create mode 100644 app/static/uploads/crab.jpg
+ create mode 100644 app/static/uploads/crabalive.jpg
+ create mode 100644 app/static/uploads/eggtest.jpg
+ create mode 100644 app/static/uploads/homemade-egg-rolls-4.jpg
+ create mode 100644 app/static/uploads/images.jpg
+ create mode 100644 app/static/uploads/marble.jpg
+ create mode 100644 app/static/uploads/shellfish.jpg
+ create mode 100644 app/templates/.index.html-0.term
+ rewrite app/templates/index.html (100%)
+ create mode 100644 app/templates/results.html
+ rename app/{utils.py => url_utils.py} (100%)
+ create mode 160000 app/yolov5
+ create mode 100644 init.term
+ create mode 100644 startbootstrap-new-age-gh-pages/index.html
+(base) ]0;~/omni[01;34m~/omni[00m$ git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+(base) ]0;~/omni[01;34m~/omni[00m$ git push -u origin main
+Username for 'https://github.com': joshuaji03
+Password for 'https://joshuaji03@github.com': 
+Enumerating objects: 73, done.
+Counting objects:   1% (1/73)Counting objects:   2% (2/73)Counting objects:   4% (3/73)Counting objects:   5% (4/73)Counting objects:   6% (5/73)Counting objects:   8% (6/73)Counting objects:   9% (7/73)Counting objects:  10% (8/73)Counting objects:  12% (9/73)Counting objects:  13% (10/73)Counting objects:  15% (11/73)Counting objects:  16% (12/73)Counting objects:  17% (13/73)Counting objects:  19% (14/73)Counting objects:  20% (15/73)Counting objects:  21% (16/73)Counting objects:  23% (17/73)Counting objects:  24% (18/73)Counting objects:  26% (19/73)Counting objects:  27% (20/73)Counting objects:  28% (21/73)Counting objects:  30% (22/73)Counting objects:  31% (23/73)Counting objects:  32% (24/73)Counting objects:  34% (25/73)Counting objects:  35% (26/73)Counting objects:  36% (27/73)Counting objects:  38% (28/73)Counting objects:  39% (29/73)Counting objects:  41% (30/73)Counting objects:  42% (31/73)Counting objects:  43% (32/73)Counting objects:  45% (33/73)Counting objects:  46% (34/73)Counting objects:  47% (35/73)Counting objects:  49% (36/73)Counting objects:  50% (37/73)Counting objects:  52% (38/73)Counting objects:  53% (39/73)Counting objects:  54% (40/73)Counting objects:  56% (41/73)Counting objects:  57% (42/73)Counting objects:  58% (43/73)Counting objects:  60% (44/73)Counting objects:  61% (45/73)Counting objects:  63% (46/73)Counting objects:  64% (47/73)Counting objects:  65% (48/73)Counting objects:  67% (49/73)Counting objects:  68% (50/73)Counting objects:  69% (51/73)Counting objects:  71% (52/73)Counting objects:  72% (53/73)Counting objects:  73% (54/73)Counting objects:  75% (55/73)Counting objects:  76% (56/73)Counting objects:  78% (57/73)Counting objects:  79% (58/73)Counting objects:  80% (59/73)Counting objects:  82% (60/73)Counting objects:  83% (61/73)Counting objects:  84% (62/73)Counting objects:  86% (63/73)Counting objects:  87% (64/73)Counting objects:  89% (65/73)Counting objects:  90% (66/73)Counting objects:  91% (67/73)Counting objects:  93% (68/73)Counting objects:  94% (69/73)Counting objects:  95% (70/73)Counting objects:  97% (71/73)Counting objects:  98% (72/73)Counting objects: 100% (73/73)Counting objects: 100% (73/73), done.
+Delta compression using up to 2 threads
+Compressing objects:   1% (1/65)Compressing objects:   3% (2/65)Compressing objects:   4% (3/65)Compressing objects:   6% (4/65)Compressing objects:   7% (5/65)Compressing objects:   9% (6/65)Compressing objects:  10% (7/65)Compressing objects:  12% (8/65)Compressing objects:  13% (9/65)Compressing objects:  15% (10/65)Compressing objects:  16% (11/65)Compressing objects:  18% (12/65)Compressing objects:  20% (13/65)Compressing objects:  21% (14/65)Compressing objects:  23% (15/65)Compressing objects:  24% (16/65)Compressing objects:  26% (17/65)Compressing objects:  27% (18/65)Compressing objects:  29% (19/65)Compressing objects:  30% (20/65)Compressing objects:  32% (21/65)Compressing objects:  33% (22/65)Compressing objects:  35% (23/65)Compressing objects:  36% (24/65)Compressing objects:  38% (25/65)Compressing objects:  40% (26/65)Compressing objects:  41% (27/65)Compressing objects:  43% (28/65)Compressing objects:  44% (29/65)Compressing objects:  46% (30/65)Compressing objects:  47% (31/65)Compressing objects:  49% (32/65)Compressing objects:  50% (33/65)Compressing objects:  52% (34/65)Compressing objects:  53% (35/65)Compressing objects:  55% (36/65)Compressing objects:  56% (37/65)Compressing objects:  58% (38/65)Compressing objects:  60% (39/65)Compressing objects:  61% (40/65)Compressing objects:  63% (41/65)Compressing objects:  64% (42/65)Compressing objects:  66% (43/65)Compressing objects:  67% (44/65)Compressing objects:  69% (45/65)Compressing objects:  70% (46/65)Compressing objects:  72% (47/65)Compressing objects:  73% (48/65)Compressing objects:  75% (49/65)Compressing objects:  76% (50/65)Compressing objects:  78% (51/65)Compressing objects:  80% (52/65)Compressing objects:  81% (53/65)Compressing objects:  83% (54/65)Compressing objects:  84% (55/65)Compressing objects:  86% (56/65)Compressing objects:  87% (57/65)Compressing objects:  89% (58/65)Compressing objects:  90% (59/65)Compressing objects:  92% (60/65)Compressing objects:  93% (61/65)Compressing objects:  95% (62/65)Compressing objects:  96% (63/65)Compressing objects:  98% (64/65)Compressing objects: 100% (65/65)Compressing objects: 100% (65/65), done.
+Writing objects:   1% (1/68)Writing objects:   2% (2/68)Writing objects:   4% (3/68)Writing objects:   5% (4/68)Writing objects:   7% (5/68)Writing objects:   8% (6/68)Writing objects:  10% (7/68)Writing objects:  11% (8/68), 24.00 KiB | 22.00 KiB/sWriting objects:  13% (9/68), 24.00 KiB | 22.00 KiB/sWriting objects:  14% (10/68), 24.00 KiB | 22.00 KiB/sWriting objects:  16% (11/68), 24.00 KiB | 22.00 KiB/sWriting objects:  17% (12/68), 24.00 KiB | 22.00 KiB/sWriting objects:  19% (13/68), 24.00 KiB | 22.00 KiB/sWriting objects:  20% (14/68), 24.00 KiB | 22.00 KiB/sWriting objects:  22% (15/68), 24.00 KiB | 22.00 KiB/sWriting objects:  23% (16/68), 24.00 KiB | 22.00 KiB/sWriting objects:  25% (17/68), 24.00 KiB | 22.00 KiB/sWriting objects:  26% (18/68), 24.00 KiB | 22.00 KiB/sWriting objects:  27% (19/68), 24.00 KiB | 22.00 KiB/sWriting objects:  29% (20/68), 24.00 KiB | 22.00 KiB/sWriting objects:  30% (21/68), 24.00 KiB | 22.00 KiB/sWriting objects:  32% (22/68), 24.00 KiB | 22.00 KiB/sWriting objects:  33% (23/68), 24.00 KiB | 22.00 KiB/sWriting objects:  35% (24/68), 24.00 KiB | 22.00 KiB/sWriting objects:  36% (25/68), 24.00 KiB | 22.00 KiB/sWriting objects:  38% (26/68), 14.26 MiB | 11.38 MiB/sWriting objects:  39% (27/68), 14.26 MiB | 11.38 MiB/sWriting objects:  41% (28/68), 14.26 MiB | 11.38 MiB/sWriting objects:  42% (29/68), 14.26 MiB | 11.38 MiB/sWriting objects:  44% (30/68), 14.26 MiB | 11.38 MiB/sWriting objects:  45% (31/68), 14.26 MiB | 11.38 MiB/sWriting objects:  47% (32/68), 14.26 MiB | 11.38 MiB/sWriting objects:  48% (33/68), 14.26 MiB | 11.38 MiB/sWriting objects:  50% (34/68), 14.26 MiB | 11.38 MiB/sWriting objects:  51% (35/68), 14.26 MiB | 11.38 MiB/sWriting objects:  52% (36/68), 14.26 MiB | 11.38 MiB/sWriting objects:  54% (37/68), 14.26 MiB | 11.38 MiB/sWriting objects:  55% (38/68), 14.26 MiB | 11.38 MiB/sWriting objects:  57% (39/68), 14.26 MiB | 11.38 MiB/sWriting objects:  58% (40/68), 14.26 MiB | 11.38 MiB/sWriting objects:  60% (41/68), 14.26 MiB | 11.38 MiB/sWriting objects:  61% (42/68), 14.26 MiB | 11.38 MiB/sWriting objects:  63% (43/68), 14.26 MiB | 11.38 MiB/sWriting objects:  64% (44/68), 14.26 MiB | 11.38 MiB/sWriting objects:  66% (45/68), 14.26 MiB | 11.38 MiB/sWriting objects:  67% (46/68), 14.26 MiB | 11.38 MiB/sWriting objects:  69% (47/68), 14.26 MiB | 11.38 MiB/sWriting objects:  70% (48/68), 14.26 MiB | 11.38 MiB/sWriting objects:  72% (49/68), 24.39 MiB | 13.92 MiB/sWriting objects:  73% (50/68), 24.39 MiB | 13.92 MiB/sWriting objects:  75% (51/68), 24.39 MiB | 13.92 MiB/sWriting objects:  76% (52/68), 24.39 MiB | 13.92 MiB/sWriting objects:  77% (53/68), 24.39 MiB | 13.92 MiB/sWriting objects:  79% (54/68), 24.39 MiB | 13.92 MiB/sWriting objects:  80% (55/68), 24.39 MiB | 13.92 MiB/sWriting objects:  82% (56/68), 24.39 MiB | 13.92 MiB/sWriting objects:  83% (57/68), 24.39 MiB | 13.92 MiB/sWriting objects:  85% (58/68), 24.39 MiB | 13.92 MiB/sWriting objects:  86% (59/68), 24.39 MiB | 13.92 MiB/sWriting objects:  88% (60/68), 24.39 MiB | 13.92 MiB/sWriting objects:  89% (61/68), 24.39 MiB | 13.92 MiB/sWriting objects:  91% (62/68), 24.39 MiB | 13.92 MiB/sWriting objects:  92% (63/68), 24.39 MiB | 13.92 MiB/sWriting objects:  94% (64/68), 24.39 MiB | 13.92 MiB/sWriting objects:  95% (65/68), 24.39 MiB | 13.92 MiB/sWriting objects:  97% (66/68), 24.39 MiB | 13.92 MiB/sWriting objects:  98% (67/68), 24.39 MiB | 13.92 MiB/sWriting objects: 100% (68/68), 24.39 MiB | 13.92 MiB/sWriting objects: 100% (68/68), 28.72 MiB | 14.87 MiB/s, done.
+Total 68 (delta 3), reused 1 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 1 local object.[K
+To https://github.com/joshuaji03/SC22-BatchC-flux-blaze.git
+   84cd331..39911e3  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(base) ]0;~/omni[01;34m~/omni[00m$ cd app
+(base) ]0;~/omni/app[01;34m~/omni/app[00m$ python3 -m main [K
+Downloading: "https://github.com/ultralytics/yolov5/archive/master.zip" to /projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/master.zip
+YOLOv5 🚀 2022-8-4 Python-3.9.12 torch-1.8.1+cu102 CPU
+
+Fusing layers... 
+Model summary: 213 layers, 7023610 parameters, 0 gradients, 15.8 GFLOPs
+Adding AutoShape... 
+Try to open
+
+    https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/port/17153/
+
+
+ * Serving Flask app "main" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/omni/app/main.py", line 136, in <module>
+    app.run(host = '0.0.0.0', port=port, debug=True)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 1030, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+(base) ]0;~/omni/app[01;34m~/omni/app[00m$ [K(base) ]0;~/omni/app[01;34m~/omni/app[00m$ pwd
+/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/omni/app
+(base) ]0;~/omni/app[01;34m~/omni/app[00m$ p[Kpython3 -m main [K
+Downloading: "https://github.com/ultralytics/yolov5/archive/master.zip" to /projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/master.zip
+YOLOv5 🚀 2022-8-4 Python-3.9.12 torch-1.8.1+cu102 CPU
+
+Traceback (most recent call last):
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/ultralytics_yolov5_master/hubconf.py", line 47, in _create
+    model = DetectMultiBackend(path, device=device, fuse=autoshape)  # detection model
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/ultralytics_yolov5_master/models/common.py", line 334, in __init__
+    model = attempt_load(weights if isinstance(weights, list) else w, device=device, inplace=True, fuse=fuse)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/ultralytics_yolov5_master/models/experimental.py", line 80, in attempt_load
+    ckpt = torch.load(attempt_download(w), map_location='cpu')  # load
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/site-packages/torch/serialization.py", line 593, in load
+    return _legacy_load(opened_file, map_location, pickle_module, **pickle_load_args)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/site-packages/torch/serialization.py", line 762, in _legacy_load
+    magic_number = pickle_module.load(f, **pickle_load_args)
+_pickle.UnpicklingError: invalid load key, '\xde'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/ultralytics_yolov5_master/hubconf.py", line 51, in _create
+    model = attempt_load(path, device=device, fuse=False)  # arbitrary model
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/ultralytics_yolov5_master/models/experimental.py", line 80, in attempt_load
+    ckpt = torch.load(attempt_download(w), map_location='cpu')  # load
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/site-packages/torch/serialization.py", line 593, in load
+    return _legacy_load(opened_file, map_location, pickle_module, **pickle_load_args)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/site-packages/torch/serialization.py", line 762, in _legacy_load
+    magic_number = pickle_module.load(f, **pickle_load_args)
+_pickle.UnpicklingError: invalid load key, '\xde'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/omni/app/main.py", line 26, in <module>
+    model = torch.hub.load("ultralytics/yolov5", "custom", path = 'best.pt', force_reload=True)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/site-packages/torch/hub.py", line 339, in load
+    model = _load_local(repo_or_dir, model, *args, **kwargs)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/site-packages/torch/hub.py", line 368, in _load_local
+    model = entry(*args, **kwargs)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/ultralytics_yolov5_master/hubconf.py", line 74, in custom
+    return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/ultralytics_yolov5_master/hubconf.py", line 69, in _create
+    raise Exception(s) from e
+Exception: invalid load key, '\xde'.. Cache may be out of date, try `force_reload=True` or see https://github.com/ultralytics/yolov5/issues/36 for help.
+(base) ]0;~/omni/app[01;34m~/omni/app[00m$ force_reload=True
+(base) ]0;~/omni/app[01;34m~/omni/app[00m$ python3 -m main [K
+Downloading: "https://github.com/ultralytics/yolov5/archive/master.zip" to /projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/master.zip
+YOLOv5 🚀 2022-8-4 Python-3.9.12 torch-1.8.1+cu102 CPU
+
+Traceback (most recent call last):
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/ultralytics_yolov5_master/hubconf.py", line 47, in _create
+    model = DetectMultiBackend(path, device=device, fuse=autoshape)  # detection model
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/ultralytics_yolov5_master/models/common.py", line 334, in __init__
+    model = attempt_load(weights if isinstance(weights, list) else w, device=device, inplace=True, fuse=fuse)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/ultralytics_yolov5_master/models/experimental.py", line 80, in attempt_load
+    ckpt = torch.load(attempt_download(w), map_location='cpu')  # load
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/site-packages/torch/serialization.py", line 593, in load
+    return _legacy_load(opened_file, map_location, pickle_module, **pickle_load_args)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/site-packages/torch/serialization.py", line 762, in _legacy_load
+    magic_number = pickle_module.load(f, **pickle_load_args)
+_pickle.UnpicklingError: invalid load key, '\xde'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/ultralytics_yolov5_master/hubconf.py", line 51, in _create
+    model = attempt_load(path, device=device, fuse=False)  # arbitrary model
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/ultralytics_yolov5_master/models/experimental.py", line 80, in attempt_load
+    ckpt = torch.load(attempt_download(w), map_location='cpu')  # load
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/site-packages/torch/serialization.py", line 593, in load
+    return _legacy_load(opened_file, map_location, pickle_module, **pickle_load_args)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/site-packages/torch/serialization.py", line 762, in _legacy_load
+    magic_number = pickle_module.load(f, **pickle_load_args)
+_pickle.UnpicklingError: invalid load key, '\xde'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/omni/app/main.py", line 26, in <module>
+    model = torch.hub.load("ultralytics/yolov5", "custom", path = 'best.pt', force_reload=True)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/site-packages/torch/hub.py", line 339, in load
+    model = _load_local(repo_or_dir, model, *args, **kwargs)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/site-packages/torch/hub.py", line 368, in _load_local
+    model = entry(*args, **kwargs)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/ultralytics_yolov5_master/hubconf.py", line 74, in custom
+    return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/ultralytics_yolov5_master/hubconf.py", line 69, in _create
+    raise Exception(s) from e
+Exception: invalid load key, '\xde'.. Cache may be out of date, try `force_reload=True` or see https://github.com/ultralytics/yolov5/issues/36 for help.
+(base) ]0;~/omni/app[01;34m~/omni/app[00m$ [K(base) ]0;~/omni/app[01;34m~/omni/app[00m$ [K(base) ]0;~/omni/app[01;34m~/omni/app[00m$ cd .. [K
+(base) ]0;~/omni[01;34m~/omni[00m$ git add . [K
+warning: CRLF will be replaced by LF in app/.init.term-0.term.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in app/..init.term-0.term-0.term.
+The file will have its original line endings in your working directory
+(base) ]0;~/omni[01;34m~/omni[00m$ git add . [K [K

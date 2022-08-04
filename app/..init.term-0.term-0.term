@@ -1,0 +1,30 @@
+(base) ]0;~/omni/app[01;34m~/omni/app[00m$ python3 -m main
+Downloading: "https://github.com/ultralytics/yolov5/archive/master.zip" to /projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/.cache/torch/hub/master.zip
+YOLOv5 🚀 2022-8-4 Python-3.9.12 torch-1.8.1+cu102 CPU
+
+Fusing layers... 
+Model summary: 213 layers, 7023610 parameters, 0 gradients, 15.8 GFLOPs
+Adding AutoShape... 
+Try to open
+
+    https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/port/12245/
+
+
+ * Serving Flask app "main" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/omni/app/main.py", line 136, in <module>
+    app.run(host = '0.0.0.0', port=port, debug=True)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/lib/python3.9/site-packages/werkzeug/serving.py", line 1030, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+(base) ]0;~/omni/app[01;34m~/omni/app[00m$ 

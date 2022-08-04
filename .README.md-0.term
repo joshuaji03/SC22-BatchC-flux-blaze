@@ -1,0 +1,59 @@
+(base) ]0;~/omni[01;34m~/omni[00m$ pw[K[Knetstat
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 localhost:35904         localhost:46563         ESTABLISHED
+tcp        0      0 3087a7e4c8a3:https      ip-172-17-0-1.us-:46776 ESTABLISHED
+tcp        0      0 localhost:46563         localhost:37792         TIME_WAIT  
+tcp        0      0 localhost:46563         localhost:37552         ESTABLISHED
+tcp        0      0 3087a7e4c8a3:https      ip-172-17-0-1.us-:42050 ESTABLISHED
+tcp        0      0 3087a7e4c8a3:https      ip-172-17-0-1.us-:44186 ESTABLISHED
+tcp        0      0 3087a7e4c8a3:https      ip-172-17-0-1.us-:44088 ESTABLISHED
+tcp        0      0 localhost:46563         localhost:35898         ESTABLISHED
+tcp        0      0 3087a7e4c8a3:https      ip-172-17-0-1.us-:45640 ESTABLISHED
+tcp        0    141 localhost:46563         localhost:35912         ESTABLISHED
+tcp        0      0 3087a7e4c8a3:https      ip-172-17-0-1.us-:45110 ESTABLISHED
+tcp        0      0 localhost:46563         localhost:37786         ESTABLISHED
+tcp        0      0 localhost:36376         localhost:46563         ESTABLISHED
+tcp        0      0 localhost:37786         localhost:46563         ESTABLISHED
+tcp        0      0 localhost:46563         localhost:36376         ESTABLISHED
+tcp        0      0 3087a7e4c8a3:https      ip-172-17-0-1.us-:46766 ESTABLISHED
+tcp        0      0 3087a7e4c8a3:https      ip-172-17-0-1.us-:46482 ESTABLISHED
+tcp        0      0 3087a7e4c8a3:https      ip-172-17-0-1.us-:45632 ESTABLISHED
+tcp        0      0 localhost:35912         localhost:46563         ESTABLISHED
+tcp        0      0 3087a7e4c8a3:https      ip-172-17-0-1.us-:42058 ESTABLISHED
+tcp        0      0 localhost:46563         localhost:36812         ESTABLISHED
+tcp        0      0 localhost:56130         localhost:34505         ESTABLISHED
+tcp        0      0 localhost:34505         localhost:56126         TIME_WAIT  
+tcp        0      0 3087a7e4c8a3:https      ip-172-17-0-1.us-:44058 ESTABLISHED
+tcp        0      0 localhost:46563         localhost:34488         ESTABLISHED
+tcp        0      0 localhost:36812         localhost:46563         ESTABLISHED
+tcp        0      0 3087a7e4c8a3:https      ip-172-17-0-1.us-:45080 ESTABLISHED
+tcp        0      0 3087a7e4c8a3:https      ip-172-17-0-1.us-:44098 ESTABLISHED
+tcp        0      0 localhost:46563         localhost:35904         ESTABLISHED
+tcp        0      0 3087a7e4c8a3:https      ip-172-17-0-1.us-:46490 ESTABLISHED
+tcp        0      0 localhost:35898         localhost:46563         ESTABLISHED
+tcp        0      0 localhost:34505         localhost:55600         ESTABLISHED
+tcp        0      0 localhost:37552         localhost:46563         ESTABLISHED
+tcp        0      0 localhost:34505         localhost:56130         ESTABLISHED
+tcp        0      0 3087a7e4c8a3:https      ip-172-17-0-1.us-:44052 ESTABLISHED
+tcp        0      0 3087a7e4c8a3:https      ip-172-17-0-1.us-:44178 ESTABLISHED
+tcp        0      0 localhost:34505         localhost:56128         TIME_WAIT  
+tcp        0      0 localhost:34488         localhost:46563         ESTABLISHED
+tcp        0      0 localhost:55600         localhost:34505         ESTABLISHED
+udp        0      0 localhost:49130         localhost:49130         ESTABLISHED
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  3      [ ]         STREAM     CONNECTED     249707   
+unix  3      [ ]         STREAM     CONNECTED     28250    
+unix  3      [ ]         STREAM     CONNECTED     249708   /projects/postgres/data/socket/.s.PGSQL.5432
+unix  3      [ ]         STREAM     CONNECTED     27280    /projects/postgres/data/socket/.s.PGSQL.5432
+(base) ]0;~/omni[01;34m~/omni[00m$ [K(base) ]0;~/omni[01;34m~/omni[00m$ [K(base) ]0;~/omni[01;34m~/omni[00m$ [K(base) ]0;~/omni[01;34m~/omni[00m$ p[Ki[Kcd app [K
+(base) ]0;~/omni/app[01;34m~/omni/app[00m$ cd [K static
+(base) ]0;~/omni/app/static[01;34m~/omni/app/static[00m$ cd img [K
+bash: cd: img: No such file or directory
+(base) ]0;~/omni/app/static[01;34m~/omni/app/static[00m$ cd assets [K
+(base) ]0;~/omni/app/static/assets[01;34m~/omni/app/static/assets[00m$ cd img [K
+(base) ]0;~/omni/app/static/assets/img[01;34m~/omni/app/static/assets/img[00m$ [K(base) ]0;~/omni/app/static/assets/img[01;34m~/omni/app/static/assets/img[00m$ pwd
+/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/omni/app/static/assets/img
+(base) ]0;~/omni/app/static/assets/img[01;34m~/omni/app/static/assets/img[00m$ set wd [K
+(base) ]0;~/omni/app/static/assets/img[01;34m~/omni/app/static/assets/img[00m$ 

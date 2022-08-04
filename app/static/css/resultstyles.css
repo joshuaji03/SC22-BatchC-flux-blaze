@@ -1,10 +1,112 @@
 body{
-    background-color: #F8F9FA;
+    background-color: white;
+}
 
+.WhyWeMiss{
+    width: 80%
+    background-color: #F8F9FA;
+}
+
+.titleMiss{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.para{
+    text-align: center;
+}
+
+.footer-widget footer-about{
+    text-align: center
+}
+
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #fff;
+}
+#mainNav .navbar-brand {
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#mainNav .navbar-brand:hover, #mainNav .navbar-brand:active {
+  color: #2937f0;
+}
+#mainNav .navbar-toggler {
+  font-size: 0.875rem;
+  padding: 0.75rem 1rem;
+  color: #212529;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: #212529;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #6c757d;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #2937f0;
 }
 
 
-.missSect{
-    margin-top: 50px;
-    bor
+.logo a {
+    float: left;
+    text-align: center;
+    padding: 15px 17px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.logodiv img {
+    width: 50px;
+    float: left;
+    /* display: inline-block; */
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+*,body,html{
+    padding: 0px;
+    margin: 0px;
+
+}
+.logo a {
+    float: left;
+    text-align: center;
+    padding: 15px 17px;
+    text-decoration: none;
+    color: black;
+}
+ 
+.navbar {
+    width: 100%;
+    height: 70px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: white;
+    font-size: 23px;
+}
+ 
+ 
+li {
+    float: right;
+    list-style-type: none;
+}
+ 
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 17px;
+    text-decoration: none;
+}
+ 
+ 
+.grow {
+    transition: all .3s ease-in-out;
+}
+ 
+.grow:hover {
+    transform: scale(1.2);
 }
