@@ -1,0 +1,7 @@
+(base) ]0;~/omni/app/templates[01;34m~/omni/app/templates[00m$ cd .. [K
+(base) ]0;~/omni/app[01;34m~/omni/app[00m$ [K(base) ]0;~/omni/app[01;34m~/omni/app[00m$ pw[K[Kls
+[0m[01;34m__pycache__[0m  [01;34massets[0m  [01;34mcss[0m  init.term  [01;34mjs[0m  main.py  requirements.txt  [01;34mtemplates[0m  utils.py  [01;34myolov5[0m
+(base) ]0;~/omni/app[01;34m~/omni/app[00m$ ls[K[Kls
+[0m[01;34m__pycache__[0m  [01;34mcss[0m        [01;34mjs[0m       requirements.txt  [01;34mtemplates[0m  [01;34myolov5[0m
+[01;34massets[0m       init.term  main.py  results.html      utils.py
+(base) ]0;~/omni/app[01;34m~/omni/app[00m$ 

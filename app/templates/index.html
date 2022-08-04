@@ -1,3 +1,504 @@
-<h2>
-    The index works.
-</h2>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Food Allergy Detection" />
+        <meta name="author" content="Flux-Blaze" />
+        <title>Food Allergy Detection</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../static/css/styles.css" rel="stylesheet">
+
+        <link href="{{ url_for('static',filename='/css/styles.css') }}" rel="stylesheet">
+        <!--link href="../static/css/styles.css" rel="stylesheet" /-->
+          
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav" >
+            <div class="container px-5">
+                <a class="navbar-brand fw-bold" href="#page-top">Food Allergy Detection</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#howitworks">Process</a></li>
+                      
+                       <li class="nav-item"><a class="nav-link me-lg-3" href="#Metrix">Metrics</a></li>
+                      <li class="nav-item"><a class="nav-link me-lg-3" href="#improvements_uses">Improvements and Uses</a></li>
+                      
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#team">Our Team</a></li>
+                    </ul>
+                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                        <span class="d-flex align-items-center">
+                            <i class="bi-chat-text-fill me-2"></i>
+                            <span class="small">Send Feedback</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Mashead header-->
+      <style>
+             body {
+  background-image: url('https://wallpapersprinted.com/download/2/good_food-wallpaper-1680x1050.jpgr=0');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+              </style>
+        <section>
+            <div class="container p-5 bg-dark bg-opacity-75">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <!-- Words and Button-->
+                <div class = "h2 fs-1 text-white mb-4">
+
+<h2>Food Allergy Detection</h2> </div>
+          <p class ="text-light">This AI model detects the presence of peanuts, tree nuts, dairy, eggs, and shellfish in unfamiliar foods. Useful when you're eating out and don't know what ingredients are in your food. Created by <mark>Flux-Blaze</mark></p>
+
+               <a class="mb-0 d-grid" id='seefood_button'>
+                      <form id='seefood_form' method=post enctype=multipart/form-data>
+                          <input id="seefood_input_field" name="file" type="file" onchange="this.form.submit();" hidden/>
+                      </form>
+                      <button href="#" class="btn btn-primary btn-block text-uppercase">
+                         Try it now!
+                      </button>
+                  </a>
+                    </div>
+                    <div class="col">
+                      
+                        <img src="https://th.bing.com/th/id/OIP.inEr4NjjD7jI0EDxqnA3mAHaHa?pid=ImgDet&rs=1" class="rounded-circle img-fluid" alt="allergens">
+                      
+                    </div>
+                  </div>
+              </div>
+        </section>
+        <section id="howitworks">
+         <div class="container p-5 bg-light">
+               <div class="row gx-5 justify-content-center">
+                  <div class="col"><pre></pre>
+                <div class = "h2 fs-1 text-black mb-4">
+                      The Process
+                  </div>
+                    <div class="row gx-5 justify-content-center">
+                      <div class="col">
+                        <h3>
+                          Preparing Data
+                        </h3>For training data, we gathered images of common dishes that predominately feature peanuts, tree nuts, dairy, eggs, and shellfish by drawing bounding boxes around where those allergens appear in the image. Data augmentation methods like flipping or cropping the image are used to increase the dataset and prevent overfitting. We used RoboFlow for storing and annotating images as well as data augmentation.
+                      </div>
+                      <div class = "col">
+                        <h3>
+                          Training
+                        </h3>
+                        <p>
+                        First, we train the model on the training set to fit its parameters before using the validation set to tune the number of hidden layers. Finally, the model is evaluated using the test set. This process is repeated for hundreds of epochs in one round of training. After analyzing the metrics, we adjust the dataset and augmentations, going through more training rounds until we are satisfied with the model's performance. We used Yolov5 for the model's architecture and Google Colab to train it. 
+                        </p>
+                      </div>
+                    </div>
+             </div>
+           </div>
+          </div>
+      </section>
+        <!-- Quote/testimonial aside-->
+        
+      <section id= "Metrix">
+            <div class= "container p-5 bg-light">
+                <div class="row gx-5 align-items-center">
+                  <h1>
+                    Metrics
+                  </h1>
+                  <p>
+                    The graphs and charts below show the current model's performance in regards to its accuracy, precision, and recall.
+                  </p>                  
+                  <h2>
+                    Confusion Matrix
+                  </h2>
+                  <img
+                       src="https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/raw/omni/app/static/assets/img/confusion_matrix.png" class= "img-thumbnail" alt="Confusion Matrix" width="500" height="300"
+                       >
+                  <p>
+                    The Confusion Matrix shows how accurate the model was able to identify objects in our images. The diagonal line shows how accurate the model did when labeling true positives(correct labels), and as you can see our model did fairly well. The main problem was mostly the background False positives and negatives.
+                  </p>
+                  <h2>
+                    metrics/mAP
+                  </h2>
+                  <div class = "col">
+                  
+                  
+                  <img
+                       src="https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/raw/omni/app/static/assets/img/Screen%20Shot%202022-08-03%20at%2011.52.43%20AM.png" class= "img-thumbnail" alt="metrics_map1" width="300" height="100"
+                       >
+                    </div>
+                  <div class = "col">
+                    
+                  <img
+                       src="https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/raw/omni/app/static/assets/img/Screen%20Shot%202022-08-03%20at%2012.00.35%20PM.png" class= "img-thumbnail" alt="metrics_map2" width="300" height="100"
+                       >
+                    </div>
+                  <p>
+                    This graph shows how mean Average Precision is affected as the model trains through more epochs. Higher precision means more correct positive identifications.
+                  </p>
+              </div>
+        </div>
+      </section>
+        <!-- Future Improvements and Potential Uses-->
+        <section id="improvements_uses">
+            <div class="container p-5 bg-light">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-auto order-lg-auto mb-auto mb-lg-auto">
+                        <div class="container-fluid px-5">
+                            <div class="row gx-5">
+                              <div class="col-md-12 mb-5">
+                              <div class="text-center">
+                                    <h2 class = "display-4 lh-1 mb-4">Future Improvements</h2>
+                                  </div>
+                              </div>
+                                <div class="col-md-6 mb-5">
+                                    <div class="text-center">
+                                        <h3 class="font-alt">Expanding Dataset</h3>
+                                        <p class="text-muted mb-0">Adding images and new categories would expand the app's utility. </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-5">
+                                    <!-- Feature item-->
+                                    <div class="text-center">
+
+                                        <h3 class="font-alt">Multilabeling</h3>
+                                        <p class="text-muted mb-0">Adding the ability to detect multiple allergens at once.                                 </div>
+                                </div>
+                                <div class="col-md-6 mb-5 mb-md-0">
+                                    <!-- Feature item-->
+                                    <div class="text-center">
+
+                                        <h3 class="font-alt">Increasing Accuracy</h3>
+                                        <p class="text-muted mb-0">Drawing polygon bounding boxes to pinpoint exactly where the allergen is visible.</p>
+                                      
+                                  </div>
+                              </div>
+                              
+                          </div>
+                      </div>
+                </div>
+             </div>
+          </div>
+        </section>
+        <!-- Basic features section-->
+        <section class="bg-light">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-auto col-lg-auto">
+                        <h2 class="display-4 lh-1 mb-4">Why we made this</h2>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0"> An app that uses AI to detect possible allergens in unknown foods helps reduce  easily preventable deaths and hospitalizations and give peace of mind to those with allergies when eating out. </p>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        <!-- Call to action section-->
+        <section class="has-bg-img bg-dark">
+          <img class ="bg-img" src = "https://cocalc21.ai-camp.dev/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/files/omni/app/static/assets/img/chopping_vegetables.jpg" alt ="">
+            <div class="cta-content">
+                <div class="container px-5">
+                    <h2 class="text-white display-1 lh-1 mb-4">
+                        Github Repository
+                    </h2>
+                    <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">View code</a>
+                </div>
+            </div>
+        </section>
+        <!-- App badge section-->
+        <section class="bg-gradient-primary-to-secondary" id="download">
+            <div class="container px-5">
+                <h2 class="text-center text-white font-alt mb-4">Our Team</h2>
+    <section class="page-section portfolio" id="team">
+            <div class="container">
+               
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                  
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <a><img class="card-img-top" src="https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/raw/omni/app/static/assets/img/3566A9F4-B133-42ED-8709-43CD11B24D21.jpeg" width="600" height="400"></a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2 DELETED-->
+                    
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <a ><img class="card-img-top" src="https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/raw/omni/app/static/assets/img/itsame.png" width="600" height="400"></a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <a ><img class="card-img-top" src="https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/raw/omni/app/static/assets/img/jj.png" width= "600" height= "400"></a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                          <div class ="cropped">
+                            <a><img class="card-img-top" src="https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/raw/omni/app/static/assets/img/Screen%20Shot%202022-08-04%20at%2010.50.16%20AM.png" width="600" height="400"></a>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <a><img class="card-img-top" src="" width="600" height="400" ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+ <!-- Portfolio Modals-->
+      
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Jack Pierce</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a><img class="card-img-top" src="https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/raw/omni/app/static/assets/img/3566A9F4-B133-42ED-8709-43CD11B24D21.jpeg" width="600" height="400" alt=""></a>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Description.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+              
+              
+        <!-- Portfolio Modal 2 DELETED-->
+        
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Jennifer Li</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                   <a href="#"><img class="card-img-top" src="https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/raw/omni/app/static/assets/img/itsame.png" width="600" height="400" alt=""></a>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Hi, I'm a rising senior at a school in Connecticut. I have activities that I like to do.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Joshua Ji</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="#"><img class="card-img-top" src="https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/raw/omni/app/static/assets/img/jj.png" width="600" height="400" alt=""></a>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Description.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Joshua Benjamin</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/raw/omni/app/static/assets/img/Screen%20Shot%202022-08-04%20at%2010.50.16%20AM.png" width="600" height="400" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Description.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Quaashie Kellam</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="#"><img class="card-img-top" src="https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/raw/omni/app/static/assets/img/img_4957-scaled.jpg" width="700" height="400" alt=""></a>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Hi, I'm a rising junior in Holly Springs High School and enjoy coding, playing chess, and learning new things. My favorite part of AI camp was creating our model and making the website you're using right now. I worked on finding images for the shellfish category, labeling the shellfish images, do training, and created this website.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+      </section>
+        <!-- Footer-->
+        <footer class="bg-black text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy; Your Website 2022. All Rights Reserved.</div>
+                    <a href="#!">Privacy</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">Terms</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">FAQ</a>
+                </div>
+            </div>
+        </footer>
+
+
+    <script src="{{ url_for('static', filename='plugins/jquery/jquery.min.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/theme.js')}}"></script>
+    <script>
+        // added to get upload with a button working
+        document.getElementById('seefood_button').addEventListener('click', openDialog);
+
+        function openDialog() {
+            document.getElementById('seefood_input_field').click();
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#spinner").bind("ajaxSend", function() {
+                $(this).show();
+            }).bind("ajaxStop", function() {
+                $(this).hide();
+            }).bind("ajaxError", function() {
+                $(this).hide();
+            });
+            // seefood_input_field
+            $('#seefood_button').click(function() {
+
+            });
+        });
+    </script>

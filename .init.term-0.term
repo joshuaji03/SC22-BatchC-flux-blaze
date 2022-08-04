@@ -1,0 +1,96 @@
+(base) ]0;~/omni[01;34m~/omni[00m$ echo "# SC22-BatchC-flux-blaze" >> README.md
+(base) ]0;~/omni[01;34m~/omni[00m$ git init
+Reinitialized existing Git repository in /projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/omni/.git/
+(base) ]0;~/omni[01;34m~/omni[00m$ git add README.md
+(base) ]0;~/omni[01;34m~/omni[00m$ git commit -m "first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'bb289674f19a4acc8fefa088a11cbcd3@3087a7e4c8a3.(none)')
+(base) ]0;~/omni[01;34m~/omni[00m$ git config --global user.email "yixuaj@uw.edu [K" [K
+(base) ]0;~/omni[01;34m~/omni[00m$ git config --g[K [Kglobal user.name "Joshua Ji" [K
+(base) ]0;~/omni[01;34m~/omni[00m$ git commit -m "first commit [K" [K
+[main 84cd331] first commit
+ 1 file changed, 1 insertion(+)
+(base) ]0;~/omni[01;34m~/omni[00m$ git branch -M main
+(base) ]0;~/omni[01;34m~/omni[00m$ git remote add origin https://github.com/joshuaji03/SC22-BatchC-flux-blaze.git
+fatal: remote origin already exists.
+(base) ]0;~/omni[01;34m~/omni[00m$ git push -u origin main
+Username for 'https://github.com': joshuaji03  
+Password for 'https://joshuaji03@github.com': 
+remote: Permission to organization-x/omni.git denied to joshuaji03.
+fatal: unable to access 'https://github.com/organization-x/omni.git/': The requested URL returned error: 403
+(base) ]0;~/omni[01;34m~/omni[00m$ git push -u origin main [K
+Username for 'https://github.com': joshuaji03  
+Password for 'https://joshuaji03@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/organization-x/omni.git/'
+(base) ]0;~/omni[01;34m~/omni[00m$ git push -u origin main [K
+Username for 'https://github.com': joshuaji03  
+Password for 'https://joshuaji03@github.com': 
+remote: Permission to organization-x/omni.git denied to joshuaji03.
+fatal: unable to access 'https://github.com/organization-x/omni.git/': The requested URL returned error: 403
+(base) ]0;~/omni[01;34m~/omni[00m$ [K(base) ]0;~/omni[01;34m~/omni[00m$ python 3-m main
+python: can't open file '/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/omni/3-m': [Errno 2] No such file or directory
+(base) ]0;~/omni[01;34m~/omni[00m$ pt[Kyu[K[K[Kgit remote -v
+origin	https://github.com/organization-x/omni.git (fetch)
+origin	https://github.com/organization-x/omni.git (push)
+(base) ]0;~/omni[01;34m~/omni[00m$ git remote remove origin
+(base) ]0;~/omni[01;34m~/omni[00m$ git remote add origin https://github.com/joshuaji03/SC22-BatchC-flux-blaze.git
+(base) ]0;~/omni[01;34m~/omni[00m$ git push -u origin main
+Username for 'https://github.com': joshuaji03  
+Password for 'https://joshuaji03@github.com': 
+Enumerating objects: 35, done.
+Counting objects:   2% (1/35)Counting objects:   5% (2/35)Counting objects:   8% (3/35)Counting objects:  11% (4/35)Counting objects:  14% (5/35)Counting objects:  17% (6/35)Counting objects:  20% (7/35)Counting objects:  22% (8/35)Counting objects:  25% (9/35)Counting objects:  28% (10/35)Counting objects:  31% (11/35)Counting objects:  34% (12/35)Counting objects:  37% (13/35)Counting objects:  40% (14/35)Counting objects:  42% (15/35)Counting objects:  45% (16/35)Counting objects:  48% (17/35)Counting objects:  51% (18/35)Counting objects:  54% (19/35)Counting objects:  57% (20/35)Counting objects:  60% (21/35)Counting objects:  62% (22/35)Counting objects:  65% (23/35)Counting objects:  68% (24/35)Counting objects:  71% (25/35)Counting objects:  74% (26/35)Counting objects:  77% (27/35)Counting objects:  80% (28/35)Counting objects:  82% (29/35)Counting objects:  85% (30/35)Counting objects:  88% (31/35)Counting objects:  91% (32/35)Counting objects:  94% (33/35)Counting objects:  97% (34/35)Counting objects: 100% (35/35)Counting objects: 100% (35/35), done.
+Delta compression using up to 2 threads
+Compressing objects:   3% (1/27)Compressing objects:   7% (2/27)Compressing objects:  11% (3/27)Compressing objects:  14% (4/27)Compressing objects:  18% (5/27)Compressing objects:  22% (6/27)Compressing objects:  25% (7/27)Compressing objects:  29% (8/27)Compressing objects:  33% (9/27)Compressing objects:  37% (10/27)Compressing objects:  40% (11/27)Compressing objects:  44% (12/27)Compressing objects:  48% (13/27)Compressing objects:  51% (14/27)Compressing objects:  55% (15/27)Compressing objects:  59% (16/27)Compressing objects:  62% (17/27)Compressing objects:  66% (18/27)Compressing objects:  70% (19/27)Compressing objects:  74% (20/27)Compressing objects:  77% (21/27)Compressing objects:  81% (22/27)Compressing objects:  85% (23/27)Compressing objects:  88% (24/27)Compressing objects:  92% (25/27)Compressing objects:  96% (26/27)Compressing objects: 100% (27/27)Compressing objects: 100% (27/27), done.
+Writing objects:   2% (1/35)Writing objects:   5% (2/35)Writing objects:   8% (3/35)Writing objects:  11% (4/35)Writing objects:  14% (5/35)Writing objects:  17% (6/35)Writing objects:  20% (7/35)Writing objects:  22% (8/35)Writing objects:  25% (9/35)Writing objects:  28% (10/35)Writing objects:  31% (11/35)Writing objects:  34% (12/35)Writing objects:  37% (13/35)Writing objects:  40% (14/35)Writing objects:  42% (15/35)Writing objects:  45% (16/35)Writing objects:  48% (17/35)Writing objects:  51% (18/35)Writing objects:  54% (19/35)Writing objects:  57% (20/35)Writing objects:  60% (21/35)Writing objects:  62% (22/35)Writing objects:  68% (24/35)Writing objects:  77% (27/35)Writing objects:  80% (28/35)Writing objects:  82% (29/35)Writing objects:  85% (30/35)Writing objects:  88% (31/35)Writing objects:  91% (32/35)Writing objects:  94% (33/35)Writing objects:  97% (34/35)Writing objects: 100% (35/35)Writing objects: 100% (35/35), 12.81 KiB | 4.27 MiB/s, done.
+Total 35 (delta 7), reused 30 (delta 5)
+remote: Resolving deltas:   0% (0/7)[Kremote: Resolving deltas:  14% (1/7)[Kremote: Resolving deltas:  28% (2/7)[Kremote: Resolving deltas:  42% (3/7)[Kremote: Resolving deltas:  57% (4/7)[Kremote: Resolving deltas:  71% (5/7)[Kremote: Resolving deltas:  85% (6/7)[Kremote: Resolving deltas: 100% (7/7)[Kremote: Resolving deltas: 100% (7/7), done.[K
+To https://github.com/joshuaji03/SC22-BatchC-flux-blaze.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(base) ]0;~/omni[01;34m~/omni[00m$ [K(base) ]0;~/omni[01;34m~/omni[00m$ [K(base) ]0;~/omni[01;34m~/omni[00m$ python 3 =^?[K[K-m main
+python: can't open file '/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/omni/3': [Errno 2] No such file or directory
+(base) ]0;~/omni[01;34m~/omni[00m$ python3 -m main
+/projects/bb289674-f19a-4acc-8fef-a088a11cbcd3/miniconda3/bin/python3: No module named main
+(base) ]0;~/omni[01;34m~/omni[00m$ [K(base) ]0;~/omni[01;34m~/omni[00m$ git remote add origin https://github.com/joshuaji03/SC22-BatchC-flux-blaze.git
+fatal: remote origin already exists.
+(base) ]0;~/omni[01;34m~/omni[00m$ git push [K[K[K[K[Kadd . [K. [K[K. [K
+fatal: ..: '..' is outside repository
+(base) ]0;~/omni[01;34m~/omni[00m$ git add [K
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+(base) ]0;~/omni[01;34m~/omni[00m$ git add . [K
+warning: adding embedded git repository: app/yolov5
+[33mhint: You've added another git repository inside your current repository.[m
+[33mhint: Clones of the outer repository will not contain the contents of[m
+[33mhint: the embedded repository and will not know how to obtain it.[m
+[33mhint: If you meant to add a submodule, use:[m
+[33mhint: [m
+[33mhint: 	git submodule add <url> app/yolov5[m
+[33mhint: [m
+[33mhint: If you added this path by mistake, you can remove it from the[m
+[33mhint: index with:[m
+[33mhint: [m
+[33mhint: 	git rm --cached app/yolov5[m
+[33mhint: [m
+[33mhint: See "git help submodule" for more information.[m
+(base) ]0;~/omni[01;34m~/omni[00m$ git [K[K[K[Kgit remote add origin https://github.com/joshuaji03/SC22-BatchC-flux-blaze.git
+fatal: remote origin already exists.
+(base) ]0;~/omni[01;34m~/omni[00m$ git branch -M main
+(base) ]0;~/omni[01;34m~/omni[00m$ git push -u origin main
+Username for 'https://github.com': joshuaji03
+Password for 'https://joshuaji03@github.com': 
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+Everything up-to-date
+(base) ]0;~/omni[01;34m~/omni[00m$ git add .
