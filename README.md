@@ -82,7 +82,7 @@ Currently we used the polygon feature that was available on Roboflow, on a few o
 
 <figure>
 <img
-     src="https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/raw/omni/app/static/assets/img/Screen%20Shot%202022-08-04%20at%202.01.02%20PM.png" width= "500" height="300"
+     src="app/static/assets/img/Screen%20Shot%202022-08-04%20at%202.01.02%20PM.png" width= "500" height="300"
      >
 </figure>
 
