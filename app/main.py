@@ -130,7 +130,8 @@ def files(filename):
 
 if __name__ == '__main__':
     # IMPORTANT: change url to the site where you are editing this file.
-    website_url = 'cocalc21.ai-camp.dev'
-    
-    print(f'Try to open\n\n    https://{website_url}' + base_url + '\n\n')
-    app.run(host = '0.0.0.0', port=port, debug=True)
+    #website_url = 'cocalc21.ai-camp.dev'
+    website_url = 'localhost'
+
+    #print(f'Try to open\n\n    https://{website_url}' + base_url + '\n\n')
+    app.run(host = '127.0.0.1', port=5000, debug=True)
