@@ -57,7 +57,7 @@ In the training loss metrics, our model improved as epochs increased in terms of
 
 To deploy our model through a website, we coded a website using Flask(Python framework for HTML, CSS, and JS) in CoCalc. Files used to deploy can be found [here](https://github.com/SelendisErised/Kirby-Detection/tree/main/deploy). To test the deployed web, after installing all the dependencies in requirements.txt (using pip install -r requirements.txt), run the main.py (python3 -m main). Then you should be generated a link, and you can start detecting allergens!
 
-<img src="app/static/assets/img/detect.jpg"   width="1200px"  height="800px"  style="object-fit:cover"/>
+<img src="app/static/assets/img/detect.jpg"   width="1200px"  height="700px"  style="object-fit:cover"/>
 
 ### Future Works And Improvements
 
