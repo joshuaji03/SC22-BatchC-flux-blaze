@@ -10,12 +10,12 @@ This project detects possible traces of food that the user is allergic to in the
 
   We collected images of various dishes and foods that fit into our categories by web-scraping Google images. We collected images of the 5 most common food allergens; peanuts, tree nuts, eggs, shellfish, and dairy and annotated them in [Roboflow](https://roboflow.com) using both bounding boxes and polygonal annotation to add to diversity and increase out model's accuracy. We then web-scraped Google images for images with no food, just a plausible background, to train our model to know the difference and decrease false positives.
 
-<img src="app/static/assets/img/peanuts.jpg" alt="peanuts" style="height: 500px; width: 1000px; object-style: cover"/>
+<img src="app/static/assets/img/peanuts.jpg" alt="roboflow" style="height: 500px; width: 1000px; object-style: cover"/>
 <br>
 In our dataset we ended with about 2000 images in five categories, and an extra category, fish, that we decided to not include in our final model.
 
 <br>
-<img src="app/static/assets/img/table.jpg"  alt="peanuts"  width="1008.6700000000001px"  height="580.309px"/>
+<img src="app/static/assets/img/table.jpg"  alt="table"  width="1049"  height="544"/>
 
 ### Script
 
@@ -37,19 +37,19 @@ The hyperparameters we used in training were:
 
 We used a confusion matrix, mAP graphs, loss metrics, and a Precision/Recall curve to display our model's performance.
 
-<img src="app/static/assets/img/confusion_matrix.png" alt="" style="height: 300px; width: 300px;"/>
+<img src="app/static/assets/img/confusion_matrix.png"   width="721px"  height="598px"  style="object-fit:cover"/>
 
 The confusion matrix shows what percent of guesses are shared between True and Predicted. The rows represent instances in the actual class while the columns represent the instances in the predicted class. The squares where the True and Predicted labels match represent correct guesses.
 
-<img src="app/static/assets/img/mAP_graphs.png"   width="173px"  height="111.81200000000001px"  style="object-fit:cover"/>
+<img src="app/static/assets/img/mAP_graphs.png"   width="550px"  height="350px"  style="object-fit:cover"/>
 
 mAP graphs show how mean Average Precision changes over epochs. Precision is True Positive identifications over all positive identifications. Average Precision is the mean precision for varying thresholds for determining if a Positive ID is True Positive. mAP is the average Average Precision for each class. 
 
-<img src="app/static/assets/img/PR_curve.png"  alt="PR_curve"  width="510px"  height="350px"  style="object-fit:cover"/>
+<img src="app/static/assets/img/PR_curve.png"  alt="PR_curve"  width="705px"  height="482px"  style="object-fit:cover"/>
 
 The PR curve shows both the precision and recall of our model. Precision is high when the model does not have false positives, and recall is high when the model does not have false negatives. Therefore, an effective model should aim to have both high precision and recall. In this graph, the area under the graph is very large such that our model is effective in detecting the allergens in the dishes.
 
-<img src="app/static/assets/img/Capture.PNG"  alt="PR_curve"  width="510px"  height="430px"  style="object-fit:cover"/>
+<img src="app/static/assets/img/Capture.PNG"  alt="loss_metrics"  width="520px"  height="430px"  style="object-fit:cover"/>
 
 In the training loss metrics, our model improved as epochs increased in terms of setting up the right bounding box of the allergen, detecting the allergen, and classifying the allergen. Similarly, the model remained consistent in keeping the loss minimal during the validation phase.
 
@@ -57,7 +57,7 @@ In the training loss metrics, our model improved as epochs increased in terms of
 
 To deploy our model through a website, we coded a website using Flask(Python framework for HTML, CSS, and JS) in CoCalc. Files used to deploy can be found [here](https://github.com/SelendisErised/Kirby-Detection/tree/main/deploy). To test the deployed web, after installing all the dependencies in requirements.txt (using pip install -r requirements.txt), run the main.py (python3 -m main). Then you should be generated a link, and you can start detecting allergens!
 
-<img src="app/static/assets/img/detect.jpg" alt="" style="height: 100px; width: 80px;"/>
+<img src="app/static/assets/img/detect.jpg"   width="1200px"  height="800px"  style="object-fit:cover"/>
 
 ### Future Works And Improvements
 
@@ -82,9 +82,9 @@ Currently we used the polygon feature that was available on Roboflow, on a few o
 
 <figure>
 <img
-     src="https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/raw/omni/app/static/assets/img/Screen%20Shot%202022-08-04%20at%202.01.02%20PM.png" width= "500" height="300"
+     src="/app/static/assets/img/Screen%20Shot%202022-08-04%20at%202.01.02%20PM.png" width= "500" height="300"
      >
-  </figure>
+</figure>
 
 5. Future uses
 In the future we hope to be able to convert our model into an app, making it easier and more available for people to use. Another thing that we wish to achieve is for our model to be able to identify and track moving objects.
