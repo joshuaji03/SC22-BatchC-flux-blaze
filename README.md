@@ -71,7 +71,7 @@ Currently we only have Peanuts, Eggs, Dairy, Tree nuts, and Shellfish as our lab
 
 <figure>
   <img
-       src="https://cocalc21.ai-camp.dev/bb289674-f19a-4acc-8fef-a088a11cbcd3/raw/omni/app/static/assets/img/Screen%20Shot%202022-08-04%20at%202.37.46%20PM.png" width="500" height="300"
+       src="app/static/assets/img/Screen%20Shot%202022-08-04%20at%202.37.46%20PM.png" width="1000" height="500"
        >
   </figure>
 3. Multi Label current and future images
